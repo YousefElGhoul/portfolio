@@ -51,28 +51,28 @@ header{
 
 /* Main Body */
 
-.main{
+section{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #121212;
 }
 
 /* Welcome Card*/
 
-.card {
+.welcome-card {
     display: flex;
     align-items: center;
     width: 50%;
     padding: 20px;
-    border-radius: 50px;
     background-color: #202020;
 }
-.card img {
+.welcome-card img {
     width: 60%;
 }
-.card nav {
+.welcome-card nav {
     width: 40%;
     display: flex;
     align-items: center;
@@ -86,30 +86,55 @@ header{
     margin-bottom: 20%;
     padding: 10%;
     background-color: #121212;
-    border-radius: 50px;
 }
 .nav-button:hover{
     background-color: #161616;
 }
 
-
-.placeholder {
+.top {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: #202020;
+    margin-top: 5%;
+}
+.top img {
+    width: 50%;
+}
+.card {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: #202020;
+}
+.card img {
+    width: 50%;
+}
+.desc {
+    color: white;
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 50%;
-    border-radius: 50px;
-    background-color: #202020;
+    display: flex;
+    align-items: center;
 }
-.button{
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+
+.desc pre {
+    line-height: 1.6;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.desc a{
+    font-size: 20px;
+    padding: 3%;
     background-color: #121212;
-    border-radius: 20px;
 }
-.button:hover{
+.desc a:hover{
     background-color: #161616;
 }
