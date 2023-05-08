@@ -6,37 +6,110 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 550;
+}
+a:hover{
+    color: #cccccc;
+}
+
+/* Nav Bar */
+
 header{
-    background-color: #141414;
+    background-color: #202020;
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 1% 1% 0% ;
-    z-index: 100;
-    border: 5px solid #000000;
-    border-top: #141414;
-    border-left: #141414;
-    border-right: #141414;
+    padding: 1% 1% 1% 1% ;
 }
-.navigation a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 550;
-    padding-left: 30px;
+.logo{
+    text-transform: uppercase;
+    font-weight: 1000;
 }
-.navigation a:hover{
-    color: #cccccc;
+.social {
+    padding-left: 0.5%;
+    display: flex;
+    justify-content: flex-end;
 }
 .social a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 550;
-    padding-left: 30px;
+    margin-left: 20%;
 }
-.navigation a:hover{
-    color: #cccccc;
+.linkedin-link:hover{
+    color: rgb(0, 102, 201);
+}
+.github-link:hover{
+    color: rgb(155, 89, 182);
+}
+.youtube-link:hover{
+    color: rgb(254, 0, 0);
+}
+
+/* Main Body */
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+}
+
+/* Welcome Card*/
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #202020;
+}
+.card img {
+    width: 60%;
+}
+.card nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-button{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 10%;
+    background-color: #121212;
+    border-radius: 50px;
+}
+.nav-button:hover{
+    background-color: #161616;
+}
+
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+    border-radius: 50px;
+    background-color: #202020;
+}
+.button{
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #121212;
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: #161616;
 }
