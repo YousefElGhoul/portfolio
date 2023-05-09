@@ -39,13 +39,13 @@ header{
 .social a{
     margin-left: 20%;
 }
-.linkedin-link:hover{
+.linkedin-link:hover i {
     color: rgb(0, 102, 201);
 }
-.github-link:hover{
+.github-link:hover i {
     color: rgb(155, 89, 182);
 }
-.youtube-link:hover{
+.youtube-link:hover i {
     color: rgb(254, 0, 0);
 }
 
@@ -91,45 +91,54 @@ section{
     background-color: #161616;
 }
 
-.top {
-    margin: 1%;
+.top-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 50%;
     padding: 20px;
     background-color: #202020;
     margin-top: 5%;
+    margin-bottom: 2%;
 }
-.top img {
-    width: 50%;
+.top-card h1 {
+    color: #ffffff;
+    font-size:xx-large;
+    align-self: center;
+    justify-self: center;
 }
+
 .card {
-    margin: 1%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 50%;
     padding: 20px;
     background-color: #202020;
+    margin-bottom: 2%;
 }
-.card img {
-    width: 50%;
+.card h1 {
+    color: #ffffff;
+    font-size:xx-large;
+    align-self: center;
+    justify-self: center;
 }
+.card span {
+    margin-top: 2%;
+}
+
 .desc {
     color: white;
-    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     display: flex;
     align-items: center;
 }
-
-.desc pre {
-    line-height: 1.6;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+.desc img {
+    width: 100%;
+    margin: 3%;
 }
-
 .desc a{
     font-size: 20px;
     padding: 3%;
@@ -137,4 +146,11 @@ section{
 }
 .desc a:hover{
     background-color: #161616;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
