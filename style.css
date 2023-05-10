@@ -107,6 +107,9 @@ section{
     align-self: center;
     justify-self: center;
 }
+.top-card pre {
+    margin-top: 2%;
+}
 
 .card {
     display: flex;
@@ -139,6 +142,9 @@ section{
     width: 100%;
     margin: 3%;
 }
+.desc p {
+    margin-top: 2%;
+}
 .desc a{
     font-size: 20px;
     padding: 3%;
@@ -152,5 +158,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
