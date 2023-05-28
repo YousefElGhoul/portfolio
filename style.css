@@ -89,6 +89,10 @@ section{
 .sub-card img {
     width: 100%;
 }
+.sub-card pre {
+    margin: 2.5%;
+    color: #ffffff;
+}
 .buttons {
     width: 40%;
     display: flex;
