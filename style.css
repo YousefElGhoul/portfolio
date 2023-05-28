@@ -70,38 +70,47 @@ section{
 /* Card */
 
 .card {
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'content content content buttons buttons'
+    'content content content buttons buttons'
+    'content content content buttons buttons'
+    'content content content span span';
+    gap: 1%;
     width: 45%;
     padding: 1%;
     margin: 1%;
     background-color: #202020;
 }
-.sub-card {
-    display: grid;
-    gap: 2%;
-    width: 60%;
-    margin-right: 2.5%;
-}
-.sub-card h1 {
+.card h1 {
+    grid-area: header;
     color: #ffffff;
     text-align: center;
 }
-.sub-card img {
+.card img {
+    grid-area: content;
     width: 100%;
 }
-.sub-card pre {
+.card span{
+    grid-area: span;
+    color: #ffffff;
+    text-align: center;
+    width: max-content;
+    margin: 2.5%;
+}
+.card pre {
+    grid-area: content;
     margin: 2.5%;
     color: #ffffff;
 }
 .buttons {
-    width: 40%;
+    grid-area: buttons;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-.buttons span{
-    color: #ffffff;
-    text-align: center;
 }
 .buttons a{
     padding: 10%;
@@ -113,9 +122,6 @@ section{
 }
 
 @media only screen and (max-width: 950px) {
-    a {
-        font-size: 20px;
-    }
     header > .long-logo {
         display: none;
     }
@@ -123,23 +129,24 @@ section{
         display: inline-block;
     }
     section {
-        padding-top: 10%;
+        padding-top: 15%;
     }
     section > .card {
-        flex-direction: column;
         width: 90%;
+        grid-template-areas: 
+        'header header header header header'
+        'content content content content content'
+        'content content content content content'
+        'content content content content content'
+        'buttons buttons buttons buttons buttons'
+        'span span span span span';
     }
-    section > .card > .sub-card {
-        width: 100%;
+    .buttons {
+        margin: 2%;
+        margin-top: 0%;
     }
-    section > .card > .buttons {
-        margin-top: 3%;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    section > .card > .buttons > a {
-        padding: 2%;
+    .buttons a{
+        padding: 5%;
+        margin: 2%;
     }
 }
