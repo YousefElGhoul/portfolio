@@ -27,7 +27,13 @@ header{
     align-items: center;
     padding: 1% 1% 1% 1% ;
 }
-.logo{
+.long-logo{
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.short-logo{
+    display: none;
+    margin-left: 5%;
     text-transform: uppercase;
     font-weight: 1000;
 }
@@ -54,116 +60,82 @@ header{
 section{
     min-height: 100vh;
     display: flex;
+    padding-top: 5%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #121212;
 }
 
-/* Welcome Card*/
-
-.welcome-card {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
-    background-color: #202020;
-}
-.welcome-card img {
-    width: 60%;
-}
-.welcome-card nav {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-button{
-    margin-top: 20%;
-    margin-bottom: 20%;
-    padding: 10%;
-    background-color: #121212;
-}
-.nav-button:hover{
-    background-color: #161616;
-}
-
-.top-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
-    background-color: #202020;
-    margin-top: 5%;
-    margin-bottom: 2%;
-}
-.top-card h1 {
-    color: #ffffff;
-    font-size:xx-large;
-    align-self: center;
-    justify-self: center;
-}
-.top-card pre {
-    margin-top: 2%;
-}
+/* Card */
 
 .card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
+    width: 45%;
+    padding: 1%;
+    margin: 1%;
     background-color: #202020;
-    margin-bottom: 2%;
 }
-.card h1 {
+.sub-card {
+    display: grid;
+    gap: 2%;
+    width: 60%;
+    margin-right: 2.5%;
+}
+.sub-card h1 {
     color: #ffffff;
-    font-size:xx-large;
-    align-self: center;
-    justify-self: center;
+    text-align: center;
 }
-.card span {
-    margin-top: 2%;
-}
-
-.desc {
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-.desc img {
+.sub-card img {
     width: 100%;
-    margin: 3%;
 }
-.desc p {
-    margin-top: 2%;
+.buttons {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-.desc a{
-    font-size: 20px;
-    padding: 3%;
+.buttons span{
+    color: #ffffff;
+    text-align: center;
+}
+.buttons a{
+    padding: 10%;
+    text-align: center;
     background-color: #121212;
 }
-.desc a:hover{
+.buttons a:hover{
     background-color: #161616;
 }
 
-.buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+@media only screen and (max-width: 950px) {
+    a {
+        font-size: 20px;
+    }
+    header > .long-logo {
+        display: none;
+    }
+    header > .short-logo {
+        display: inline-block;
+    }
+    section {
+        padding-top: 10%;
+    }
+    section > .card {
+        flex-direction: column;
+        width: 90%;
+    }
+    section > .card > .sub-card {
+        width: 100%;
+    }
+    section > .card > .buttons {
+        margin-top: 3%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    section > .card > .buttons > a {
+        padding: 2%;
+    }
 }
